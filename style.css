@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@1,300&family=PT+Serif:wght@700&family=Playfair+Display:wght@800&family=Rubik:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/images/background.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.logo{
+    background: linear-gradient(to right, #ff9c9c,#ff31d2,#00f7ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.625rem;
+    padding-left: 6.25rem;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.navbar-toggler{
+    background-color: #faf8f8;
+}
+.show{
+    display: none;
+}
+.nav-link{
+    font-family: PT Serif;
+}
+.icons{
+    margin-right: 5rem;
+    display: flex;
+}
+.icon_content{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #faf8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    transition: transform 0.5s;
+}
+.icon_content a i{
+    font-size: 33px;
+    color: #0d0d0e;
+}
+.icon_content:hover{
+    transform: rotate(360deg);
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.monk{
+    height: 20rem;
+    padding-left: 1rem;
+}
+.name{
+    font-size: 4.37rem;
+    background: linear-gradient(to right, #7bf2f7,#07bfc5, rgb(255, 209, 58), rgb(255, 153, 0));
+    font-family: PT serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+.info span{
+    animation-duration: 1s;
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes change{
+    from{
+        color:rgb(235, 230, 230);
+    }
+    to{
+        color: #fff567;
+    }
+}
+.info{
+    font-family: Rubik;
+    font-weight: bold;
+    color: rgb(235, 230, 230);
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 880px){
+    .show{
+        display: block;
+    }
+    .icon_content{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .details{
+        display: inline;
+    }
+    .monk{
+        height: 17.5rem;
+        padding-left: 0;
+    }
+    .home_pic{
+        margin: 0 30%;
+    }
+    .info{
+        padding-right: 0;
+        margin: 0 5%;
+    }
+    .name{
+        font-size: 3.5rem;
+    }
+    .logo{
+        padding-left: 3.2rem;
+    }
+    .icons{
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width: 530px){
+    .home_pic{
+        margin: 0 20%;
+    }
+}
+@media screen and (max-width: 460px){
+    .home_pic{
+        margin: 0 15%;
+    }
+    .logo{
+        padding-left: 1rem;
+    }
+    .icons{
+        margin-right: 0rem;
+    }
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@1,300&family=PT+Serif:wght@700&family=Playfair+Display:wght@800&family=Rubik:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(19, 19, 19),rgb(36, 36, 36), rgb(71, 71, 71), rgb(90, 90, 90));
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-arrow-left{
+    font-size: 33px;
+    color: rgb(230, 227, 227);
+    position: fixed;
+}
+.work_title{
+    font-size: 55px;
+    color: rgb(236, 236, 236);
+    text-shadow: 4px 3px 3px #24f1f8;
+    font-family: PT serif;
+    margin-right: 40%;
+}
+.title{
+    font-size: 35px;
+    font-family: PT Serif;
+    color: rgb(255, 215, 35);
+    font-weight: bold;
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    margin-left: 20%;
+}
+.imge{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.imge img{
+    width: 170px;
+    height: 170px;
+    border-radius: 20%;
+}
+.extra_w{
+    display: flex;
+}
+.extra_w p{
+    font-size: 31px;
+    color: rgb(1, 255, 242);
+    font-weight: bold;
+    font-family: Merriweather;
+    padding: 0 30px;
+}
+.extra_w img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.extra_w img:hover{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.app_info{
+    width: 170px;
+    height: 0px;
+    border-radius: 20%;
+    background: linear-gradient(rgba(80, 80, 80, 0.9),rgb(243, 35, 139));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.4s;
+}
+.app_info h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: snow;
+    text-shadow: 2.5px 2.5px black;
+}
+.app_info p{
+    margin-top: -18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 17px;
+}
+.app_info a{
+    margin-bottom: 14px;
+    color: snow;
+    text-decoration: none;
+    font-size: 33px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 36.5px;
+    text-align: center;
+    background: rgb(29, 29, 29);
+}
+.imge:hover .app_info{
+    height: 173px;
+}
+
+@media screen and (max-width:1075px) {
+    .work_title{
+        margin-right: 33%;
+    }
+}
+@media screen and (max-width:790px) {
+    .work_title{
+        margin-right: 28%;
+    }
+}
+@media screen and (max-width:600px) {
+    .work_title{
+        margin-right: 25%;
+    }
+}
+@media screen and (max-width:480px) {
+    .work_title{
+        margin-right: 18%;
+    }
+}
+@media screen and (max-width:390px) {
+    .work_title{
+        margin-right: 12%;
+    }
+}
+@media screen and (max-width:350px) {
+    .work_title{
+        margin-right: 6%;
+    }
+}
